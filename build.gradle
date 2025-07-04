@@ -121,6 +121,9 @@ dependencies {
 	testImplementation 'org.springframework.cloud:spring-cloud-stream-test-binder'
 	testImplementation 'org.springframework.kafka:spring-kafka-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+	testImplementation 'org.testcontainers:junit-jupiter:1.19.7' // Added
+	testImplementation 'org.testcontainers:postgresql:1.19.7'   // Added
+	testImplementation 'org.testcontainers:kafka:1.19.7'        // Added
 
 // Fineract dependencies
 	implementation "org.apache.fineract:fineract-avro-schemas:${fineractVersion}"
