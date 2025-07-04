@@ -12,4 +12,5 @@ public interface AggregatorRepository extends R2dbcRepository<Aggregator, Long> 
 
     Mono<Aggregator> findOneByLoanId(Long loanId);
 
+    Mono<Long> countByLoanId(Long loanId); // For testing idempotency
 }
