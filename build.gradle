@@ -1,8 +1,8 @@
 plugins {
 	id 'java'
-	id 'org.springframework.boot' version '3.4.5'
+	id 'org.springframework.boot' version '3.5.3'
 	id 'io.spring.dependency-management' version '1.1.7'
-	id 'com.diffplug.spotless' version '6.25.0'
+	id 'com.diffplug.spotless' version '7.0.4'
 }
 
 spotless {
@@ -88,10 +88,10 @@ repositories {
 }
 
 ext {
-	set('springCloudVersion', "2024.0.1")
+	set('springCloudVersion', "2025.0.0")
 }
 
-ext.fineractVersion = '0.0.1138-9516656'
+ext.fineractVersion = '0.0.1147-1bbd5e4'
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-actuator'
@@ -106,14 +106,14 @@ dependencies {
 	implementation 'org.springframework.kafka:spring-kafka'
 	implementation 'org.springframework.integration:spring-integration-kafka'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
-	implementation "org.apache.kafka:kafka-clients:3.9.0"
+	implementation "org.apache.kafka:kafka-clients:4.0.0"
 	implementation "org.liquibase:liquibase-core"
 	implementation "org.springframework.boot:spring-boot-starter-jdbc"
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 	compileOnly 'org.projectlombok:lombok'
 	runtimeOnly 'com.h2database:h2'
-	runtimeOnly    "org.postgresql:r2dbc-postgresql:1.0.4.RELEASE"
-	runtimeOnly    "org.postgresql:postgresql:42.7.2"
+	runtimeOnly    "org.postgresql:r2dbc-postgresql:1.0.7.RELEASE"
+	runtimeOnly    "org.postgresql:postgresql:42.7.7"
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.integration:spring-integration-test'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
